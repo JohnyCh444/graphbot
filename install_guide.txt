@@ -1,0 +1,79 @@
+# Scientific Data Visualization Tool - Installation Guide
+
+## Required Dependencies
+
+To run this application, you need to install the following packages:
+- streamlit
+- matplotlib
+- numpy
+- pandas
+- scipy
+
+## Installation Instructions
+
+1. **Install Python** (version 3.8 or higher) from https://www.python.org/downloads/
+
+2. **Install required packages using pip**:
+   ```
+   pip install streamlit matplotlib numpy pandas scipy
+   ```
+
+3. **Run the application**:
+   ```
+   streamlit run app.py
+   ```
+   
+4. The application should open in your default web browser at http://localhost:8501
+
+## Installation on macOS
+
+1. **Extract the ZIP file**:
+   - Double-click the `scientific_data_viz.zip` file to extract it
+   - Or use Terminal: `unzip scientific_data_viz.zip -d scientific_data_viz`
+
+2. **Open Terminal**:
+   - Open Applications → Utilities → Terminal
+   - Or search for "Terminal" using Spotlight (Cmd + Space)
+
+3. **Navigate to the extracted folder**:
+   ```
+   cd path/to/scientific_data_viz
+   ```
+   Replace `path/to/scientific_data_viz` with the actual path to where you extracted the files
+
+4. **Create a virtual environment (recommended)**:
+   ```
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+5. **Install dependencies**:
+   ```
+   pip3 install streamlit matplotlib numpy pandas scipy
+   ```
+
+6. **Run the application**:
+   ```
+   streamlit run app.py
+   ```
+
+7. **Access the application**:
+   - The application will start automatically in your default browser
+   - If not, open your browser and go to: http://localhost:8501
+
+## Project Structure
+- app.py - Main application file
+- utils/ - Directory containing utility modules:
+  - data_parser.py - Handles parsing of input data
+  - curve_fitting.py - Implements regression models and derivatives
+  - plotting.py - Creates and customizes plots
+  - code_generator.py - Generates reproducible code
+
+## Features
+- Multiple input format support
+- Advanced curve fitting (Linear, Polynomial, Logarithmic, Exponential)
+- Error bar visualization
+- Derivative calculation and visualization
+- Max/min point identification
+- Statistical analysis
+- Code generation for reproducibility
